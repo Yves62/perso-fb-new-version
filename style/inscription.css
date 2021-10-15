@@ -1,0 +1,230 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    height: 100vh;
+}
+
+header{
+    width: 100%;
+    min-height: 100px;
+    background-color: rgba(42, 42, 104, 0.842);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header .header-left{
+    flex-basis : 55%;
+    color: white;
+    justify-self: center;
+    align-self: center;
+}
+
+header .header-left h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+header .header-right{
+    flex-basis: 42%;
+}
+
+header .header-right .little-form{
+    max-width: 80%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap:15px;
+    font-size: 0.8rem;
+}
+
+header .header-right .little-form .first-div,
+header .header-right .little-form .second-div,
+header .header-right .little-form .third-div
+{
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    color:white;   
+}
+
+header .header-right .little-form .second-div{
+    padding-bottom: 12px;
+}
+
+header .header-right .little-form .second-div p,
+header .header-right .little-form .first-div label:last-child
+{
+    color: rgba(128, 128, 128, 0.726);
+}
+
+header .header-right .little-form .third-div{
+    padding-bottom: 10px;
+}
+
+header .header-right .little-form .third-div a{
+    color:white;
+    border: 1px solid white;
+    padding:2px;
+    border-radius: 3px;
+    font-size: 0.8rem;
+    background-color: rgba(42, 42, 104, 0.164);
+}
+
+/* .btn-header{
+    background-color: rgba(42, 42, 104, 0.164);
+    color: white;
+}  */
+
+@media screen and (max-width: 1200px){
+    header{
+        flex-direction: column;
+        width: 100%;
+        gap:30px;
+    }
+    header .header-right{
+        width: 95%;
+        padding:20px;
+        margin: 0 auto;
+   
+    }
+    header .header-right .little-form{
+        flex-direction: column;
+        width: 90%;
+        margin : 0 auto;
+    }
+
+    header .header-right .little-form .first-div,
+    header .header-right .little-form .second-div,
+    header .header-right .little-form .third-div{
+        width: 100%;
+    }
+    header .header-right .little-form .first-div input,
+    header .header-right .little-form .second-div input,
+    header .header-right .little-form .third-div input{
+        height: 40px;
+        margin:10px 0px;
+    }
+}
+
+
+/***** SECTION INSCRIPTION PARTIE GAUCHE************/
+
+
+#form-inscription{
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 600px;
+    grid-template-areas: "left right";
+}
+
+#form-inscription .left{
+    grid-area: left;
+    background-color: blue;
+    background: url('../ressources/images/undraw_connected_world_wuay.svg') center / cover;
+}
+
+@media screen and (max-width : 1200px){
+    #form-inscription{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
+/***** SECTION INSCRIPTION PARTIE DROITE************/
+
+
+#form-inscription .right{
+    padding:10px 0px 0px 25px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.062); 
+}
+
+#form-inscription .right .title{
+    padding-bottom: 25px;
+}
+
+#form-inscription .right .title h2{
+    padding: 15px 0px
+}
+
+#form-inscription .right .form-complete{
+    display: flex;
+    flex-direction: column;
+}
+
+#form-inscription .right .form-complete .global-info{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+#form-inscription .right .form-complete .global-info div{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    width: 80%;
+}
+
+#form-inscription .right .form-complete .global-info input{
+    width: 80%;
+    height:30px;
+    border-radius: 8px;
+    border: none;
+    padding: 0px 10px;
+    background-color: white;
+}
+
+#form-inscription .right .form-complete .Birthday p{
+    margin:10px 0px;
+}
+
+#form-inscription .right .form-complete .Birthday input{
+    width: 60px;
+    height: 20px;
+    padding: 10px 0px;
+    text-align: center;
+}
+
+#form-inscription .right .form-complete .Birthday a{
+    font-size:0.7rem;
+}
+
+#form-inscription .right .form-complete .choix-sexe{
+    display: flex;
+    flex-direction: row;
+    gap:10px;
+    padding: 15px 0px;
+    font-size: 0.7rem;
+}
+
+#form-inscription .right .form-complete .cgv{
+    width: 40%;
+    font-size: 0.5rem;
+    margin-bottom: 15px;
+}
+
+#form-inscription .right .form-complete .btn{
+    width: 30%;
+    padding: 8px;
+    color:white;
+    background-color: rgb(15, 156, 15);
+    border-radius: 10px;
+}
+
+
+
+

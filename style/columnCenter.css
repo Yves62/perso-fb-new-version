@@ -1,0 +1,244 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+li,img{
+    cursor: pointer;
+}
+
+body{
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.24);
+}
+
+
+/****CENTER COLUMN*******/
+
+#center-column{
+    grid-area: center;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 100%;
+    height: 1500px;
+    gap:5px;
+    margin-top:40px;
+    width :90%;
+    margin : 0 auto;
+}
+
+/***CENTER COLUMN PROFIL****/
+
+#center-column .profils{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    gap: 10px;
+}
+
+#center-column .profils .profils-details{
+    position: relative;
+}
+
+#center-column .profils .profils-details img{
+    width: 125px;
+    height: 280px;
+    border-radius: 10px;
+}
+
+#center-column .profils .profils-details .little-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    overflow: hidden;
+    border:2px solid white;
+    top:30px;
+    left: 15px;
+    position: absolute;
+}
+
+#center-column .profils .profils-details .little-img img{
+    width:100%;
+    height:100%;
+}
+
+#center-column .profils .profils-details .chevron{
+    width: 40px;
+    height: 40px;
+    border-radius: 35px;
+    overflow: hidden;
+    border:2px solid white;
+    top:120px;
+    right: -20px;
+    position: absolute;
+    background-color: #fff;
+}
+
+#center-column .profils .profils-details .chevron img{
+    width:100%;
+    height:100%;
+}
+
+
+#center-column .profils .profils-details p{
+    position: absolute;
+    bottom: 6px;
+    left : 10px;
+    color: white;
+    font-size: 1rem;
+}
+
+@media screen and (max-width : 1100px){
+
+    #center-column .profils{
+        flex-wrap: wrap;
+        min-height: 700px;
+    }
+}
+
+
+/***CENTER COLUMN MAIN**/
+
+#center-column .main{
+    margin-top:20px;
+    padding: 10px;
+    height:160px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+#center-column .top-main{
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+#center-column .top-main div{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    background: url(./ressources/images/profil_friend.jpg) center / cover;
+}
+
+#center-column .top-main input{
+    width: 88%;
+    height: 80%;
+    border-radius: 50px;
+    padding: 6px 15px;
+    margin-top: 5px;
+}
+
+#center-column .top-main img{
+    width: 20%;
+    height: auto;
+}
+
+#center-column .bottom-main{
+    border-top: 1px dashed black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top:10px;
+    height: 80px
+}
+
+
+#center-column .bottom-main p{
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+#center-column .bottom-main img{
+    width: 20px;
+    height: 20px;
+}
+
+#center-column .bottom-main .pictures, #center-column .bottom-main .friends, #center-column .bottom-main .hobbies{
+    display: flex;
+    gap:8px;
+}
+
+@media screen and (max-width : 1100px){
+
+    #center-column .bottom-main .pictures, #center-column .bottom-main .friends, #center-column .bottom-main .hobbies{
+        display: block;
+        width: 100%;
+    }
+}
+
+/***CENTER COLUMN POST***/
+
+#center-column .post{
+    margin:20px 0px;
+    height: 600px;
+    background-color: white;
+    border-radius: 10px;
+    padding : 5px;
+}
+
+#center-column .top-post{
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 70px;
+}
+
+
+#center-column .top-post .top-post-img{
+    width: 10%;
+    height: 70px;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#center-column .top-post .top-post-img img{
+    width: 100%;
+}
+
+#center-column .top-post .top-post-name{
+    display:flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+#center-column .top-post .top-post-name p{
+    margin-left: 15px;
+    font-size: 1.1rem;
+    font-weight: 800;
+}
+
+#center-column .top-post .options{
+    width: 10%;
+}
+
+#center-column .post .title-post{
+    width: 100%;
+    height: 30px;
+    padding:10px;
+}
+
+#center-column .post .title-post p{
+   font-size: 1.2rem;
+   color: gray;
+}
+
+#center-column .post .picture-post{
+    width: 100%;
+    height: 300px;
+    padding:15px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+#center-column .post .picture-post img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+}
